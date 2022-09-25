@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>MSI 2020</title>
+  </head>
+  <body>
+    <div class="main">
+      <p>MSI 2020</p>
+      <p>Hey!</p>
+      <p>Let's try to find a joke for you:</p>
+      <form action="" autocomplete="off" class="params" id="radio-buttons">
+        <div class="params__type">
+          <div class="params__categories">
+            <input type="radio" id="random" name="caterogies" value="random" />
+            <label for="random">Random</label>
+          </div>
+        </div>
+        <div class="params__type">
+          <div class="params__categories">
+            <input
+              type="radio"
+              id="category"
+              name="caterogies"
+              value="category"
+            />
+            <label for="category">From caterogies</label>
+          </div>
+          <div class="params__subcategories">
+            <input type="radio" id="animal" name="typeofjoke" value="animal" />
+            <label for="animal">Animal</label>
+            <input type="radio" id="career" name="typeofjoke" value="career" />
+            <label for="career">Career</label>
+            <input
+              type="radio"
+              id="celebrity"
+              name="typeofjoke"
+              value="celebrity"
+            />
+            <label for="celebrity">Celebrity</label>
+            <input type="radio" id="dev" name="typeofjoke" value="dev" />
+            <label for="dev">Dev</label>
+          </div>
+        </div>
+        <div class="params__type">
+          <div class="params__categories">
+            <input type="radio" id="search" name="caterogies" value="search" />
+            <label for="search">Search</label>
+          </div>
+          <div class="params__subcategories">
+            <input
+              type="text"
+              id="input-search"
+              class="input-search"
+              placeholder="Free text search..."
+            />
+          </div>
+        </div>
+        <button id="submit">Get a joke</button>
+      </form>
+      <div class="content"></div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar__content">
+        <h3>Favourite</h3>
+        <div class="sidebar__favorite" id="favoritelist"></div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
